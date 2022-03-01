@@ -90,7 +90,6 @@ body {
     transition-duration: 2s;
     animation: flutuando 2.5s cubic-bezier(0.100, 0.100, 0.100, 0.100) infinite;
 
-
 }
 
 
@@ -137,6 +136,7 @@ body {
     border-radius: 50%;
 
 
+
     /* transition-delay: 0.5s; */
 }
 
@@ -158,7 +158,14 @@ body {
     align-items: center;
 }
 
-#formacoes {
+
+.section-title {
+    text-align: center;
+    margin: 25px 0px;
+    font-size: 1.8rem;
+}
+
+#formacoes-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -204,7 +211,106 @@ body {
 }
 
 
+/* Projetos */
 
+#projetos {
+    display: flex;
+    flex-direction: column;
+}
+
+#projetos-list {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.projeto-e {
+    display: flex;
+    margin-bottom: 40px;
+    opacity: 0;
+
+}
+
+.projeto-d {
+    display: flex;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.projeto-content {
+    background-image: linear-gradient(45deg, #0052C3 -25%, #FF3473 125%);
+    padding: 25px;
+    border-radius: 25px;
+    width: 40vw;
+}
+
+.projeto-e .projeto-image-border {
+    background-image: linear-gradient(45deg, #0052C3 -25%, #FF3473 125%);
+    width: 50vw;
+    padding: 5px;
+    border-radius: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projeto-d .projeto-image-border {
+    background-image: linear-gradient(45deg, #0052C3 -25%, #FF3473 125%);
+    width: 50vw;
+    padding: 5px;
+    border-radius: 25px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.projeto-image {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.slider-e {
+    animation: DtoE 2s ease;
+    opacity: 1;
+}
+
+.slider-d {
+    animation: EtoD 2s ease;
+    opacity: 1;
+}
+
+.opaco {
+    animation: opaco ease 800ms;
+}
+
+
+
+
+
+
+
+
+
+@keyframes opaco {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
 
 @keyframes DtoE {
     0% {
