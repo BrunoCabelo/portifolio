@@ -1,6 +1,37 @@
 $(()=>{
 
-    
+    function altd(){
+        var alt = $('.projeto-d');
+        var y = window.scrollY;
+        for(let i = 0; i < alt.length; i++){
+               var a = alt[i];
+               var b = $(a).position();
+            if(y >= b.top - 600){
+                $(a).addClass("slider-d");
+                $(a).removeClass("opaco");
+            }else if(y < b.top - 600){
+                $(a).removeClass("slider-d");
+                $(a).addClass("opaco");
+            }
+        }
+    }
+
+    function alte(){
+        var alt = $('.projeto-e');
+        var y = window.scrollY;
+        for(let i = 0; i < alt.length; i++){
+               var a = alt[i];
+               var b = $(a).position();
+            if(y >= b.top - 600){
+                $(a).addClass("slider-e");
+                $(a).removeClass("opaco");
+            }else if(y < b.top - 600){
+                $(a).removeClass("slider-e");
+                $(a).addClass("opaco");
+            }
+        }
+    }
+
     $(document).scroll(()=>{
         var y = window.scrollY;
         if(y > 90){
@@ -14,39 +45,9 @@ $(()=>{
             $('.formacao-border-gradient').css('trasition', '1s');
         }
 
-        var altura1 = $('#projeto-1').position();
-        var altura2 = $('#projeto-2').position();
-        var altura3 = $('#projeto-3').position();
-        var altura4 = $('#projeto-4').position();
+        altd();
+        alte();
 
-        if(y >= altura1.top - 600){
-            $('#projeto-1').addClass("slider-e");
-            $('#projeto-1').removeClass("opaco");
-        }else{
-            $('#projeto-1').removeClass("slider-e");
-            $('#projeto-1').addClass("opaco");
-        }
-        if(y >= altura2.top -600){
-            $('#projeto-2').addClass("slider-d");
-            $('#projeto-2').removeClass("opaco");
-        }else{
-            $('#projeto-2').removeClass("slider-d");
-            $('#projeto-2').addClass("opaco");
-        }
 
-        if(y >= altura3.top -600){
-            $('#projeto-3').addClass("slider-e");
-            $('#projeto-3').removeClass("opaco");
-        }else{
-            $('#projeto-3').removeClass("slider-e");
-            $('#projeto-3').addClass("opaco");
-        }
-        if(y >= altura4.top -600){
-            $('#projeto-4').addClass("slider-d");
-            $('#projeto-4').removeClass("opaco");
-        }else{
-            $('#projeto-4').removeClass("slider-d");
-            $('#projeto-4').addClass("opaco");
-        }
     })
 })

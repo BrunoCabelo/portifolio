@@ -12,7 +12,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif, thin;
     color: #F7F7F7;
-    overflow-x: hidden;
+
 }
 
 /* navbar */
@@ -25,6 +25,8 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    animation: backgroundlinear 3s cubic-bezier(0.100, 0.100, 0.100, 0.100);
+    transition: 4s;
 }
 
 #navbar-container {
@@ -61,7 +63,7 @@ body {
 /* header */
 
 #header {
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     padding: 15px;
     display: flex;
@@ -163,6 +165,9 @@ body {
     text-align: center;
     margin: 25px 0px;
     font-size: 1.8rem;
+    color: #666666;
+    cursor: pointer;
+
 }
 
 #formacoes-list {
@@ -186,7 +191,17 @@ body {
     margin: 15px;
     animation: flutuando 2.5s cubic-bezier(0.100, 0.100, 0.100, 0.100) infinite;
     opacity: 0;
+    cursor: pointer;
 
+}
+
+.formacao-border-gradient:nth-child(2n) {
+    animation-delay: 1s;
+}
+
+.formacao-border-gradient:hover {
+    width: 265px;
+    animation: none;
 }
 
 .formacao {
@@ -200,9 +215,7 @@ body {
     border-radius: 25px;
 }
 
-.formacao-border-gradient:hover {
-    width: 265px;
-}
+
 
 .formacao img {
     width: 200px;
@@ -293,9 +306,17 @@ body {
 
 
 
+@keyframes backgroundlinear {
+    0% {
+        background-position: -1500px;
 
+    }
 
+    100% {
+        background-position: 100%;
+    }
 
+}
 
 
 @keyframes opaco {
