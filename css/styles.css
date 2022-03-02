@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     background: #111;
     height: 100vh;
@@ -257,6 +262,32 @@ body {
     padding: 25px;
     border-radius: 25px;
     width: 40vw;
+
+
+}
+
+.projeto-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.projeto-description {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.ferramentas-ult {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ferramenta {
+    width: 35px;
+    margin: 0px 15px;
+    cursor: pointer;
 }
 
 .projeto-e .projeto-image-border {
@@ -282,6 +313,7 @@ body {
     align-items: center;
 
 }
+
 
 
 .projeto-image {
