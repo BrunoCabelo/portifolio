@@ -337,6 +337,41 @@ body {
 
 
 
+#footer {
+    width: 100vw;
+    height: 40vh;
+    background-color: #222324;
+}
+
+#footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.2rem;
+
+}
+
+
+
+.copyright {
+    bottom: 10px;
+}
+
+
+
+
+
 
 @keyframes backgroundlinear {
     0% {
