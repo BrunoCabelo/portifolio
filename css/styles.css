@@ -56,6 +56,10 @@ body {
     justify-content: center;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 #navbar ul {
     list-style: none;
     display: flex;
@@ -299,12 +303,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .ferramenta {
     width: 35px;
     margin: 0px 15px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .projeto-e .projeto-image-border {
@@ -441,6 +447,9 @@ body {
 
     }
 
+    .brand {
+        display: none;
+    }
 
 
     #border-gradient-content {
@@ -452,7 +461,25 @@ body {
 
 }
 
-@media(max-width: 376px) {}
+@media(max-width: 376px) {
+    .menu-option {
+        margin: 0px 5px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu-mobile {
+        display: initial;
+    }
+
+    body {
+        min-width: none;
+    }
+
+    .brand {
+        display: none;
+    }
+}
 
 @keyframes backgroundlinear {
     0% {
