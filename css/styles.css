@@ -11,6 +11,10 @@ a {
     color: inherit;
 }
 
+#nav-mobile {
+    display: none;
+}
+
 body {
     background: #111;
     height: 100vh;
@@ -404,6 +408,45 @@ body {
 }
 
 @media(max-width: 426px) {
+    .menu-option {
+        margin: 0px 5px;
+        cursor: pointer;
+        display: none;
+    }
+
+
+
+    .menu-mobile {
+        display: initial;
+        cursor: pointer;
+    }
+
+    #nav-mobile {
+        height: 100vh;
+        background: linear-gradient(45deg, #0052C3 -25%, #FF3473 125%);
+        color: white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 2s;
+        animation: DtoE 800ms;
+        transition: 2s;
+        left: 0px;
+    }
+
+    #nav-mobile ul {
+        width: 80%;
+        font-size: 2.2rem;
+        list-style: none;
+    }
+
+    #nav-mobile li {
+        margin: 45px 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
     .projeto-d {
         width: 100%;
     }
@@ -462,15 +505,7 @@ body {
 }
 
 @media(max-width: 376px) {
-    .menu-option {
-        margin: 0px 5px;
-        cursor: pointer;
-        display: none;
-    }
 
-    .menu-mobile {
-        display: initial;
-    }
 
     body {
         min-width: none;

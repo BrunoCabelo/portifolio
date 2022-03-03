@@ -50,4 +50,42 @@ $(()=>{
 
 
     })
+
+    var l = true
+    $('.menu-mobile').click(()=>{
+        if(l === false){
+            $('#nav-mobile').css('opacity', '0');
+            $('#nav-mobile').css('display', 'none');
+            l = true;
+        }else if( l === true){
+            $('#nav-mobile').css('opacity', '1');
+            l = false;
+            $('#nav-mobile').css('display', 'flex');
+        }
+
+        
+     
+    });
+
+    $(".scroll").on("click", function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            console.log(this)
+            const hash = this.hash;
+            console.log(hash)
+    
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top - 1000
+                },
+                800
+            );
+        }
+
+        $('#nav-mobile').css('opacity', '0');
+            $('#nav-mobile').css('display', 'none');
+            l = true;
+
+    });
+
 })
