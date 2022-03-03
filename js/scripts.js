@@ -76,15 +76,13 @@ $(()=>{
     
             $("html, body").animate(
                 {
-                    scrollTop: $(hash).offset().top - 1000
+                    scrollTop: $(hash).offset().top - 100
                 },
                 800
             );
         }
 
-        $('#nav-mobile').css('opacity', '0');
-            $('#nav-mobile').css('display', 'none');
-            l = true;
+       
 
     });
 
