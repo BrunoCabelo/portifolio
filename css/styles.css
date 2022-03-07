@@ -513,6 +513,8 @@ body {
 
     body {
         min-width: none;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 
     .brand {
