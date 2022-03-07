@@ -23,6 +23,10 @@ body {
     font-family: 'Roboto', sans-serif, thin;
     color: #F7F7F7;
 
+    overflow: scroll;
+    overflow-x: hidden;
+
+
 }
 
 /* navbar */
