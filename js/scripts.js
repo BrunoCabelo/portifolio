@@ -16,6 +16,7 @@ $(()=>{
         }
     }
 
+
     function alte(){
         var alt = $('.projeto-e');
         var y = window.scrollY;
@@ -32,6 +33,7 @@ $(()=>{
         }
     }
 
+    
     $(document).scroll(()=>{
         var y = window.scrollY;
         if(y > 90){
